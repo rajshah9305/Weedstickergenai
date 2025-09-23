@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Weed Sticker Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; connect-src 'self' https://generativelanguage.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:;">
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Weed Sticker Generator</h1>
+    <p class="subtitle">Refresh for a new sticker ✨</p>
+
+    <div id="stage">
+      <div id="loader">
+        <div class="spinner"></div>
+        <p id="status">Rolling one up…</p>
+      </div>
+      <img id="output" alt="Generated sticker" />
+      <p id="error" class="hidden">Generation failed—refresh to retry.</p>
+    </div>
+
+    <footer>Powered by Gemini API • Personal use only</footer>
+  </main>
+
+  <script type="module" src="/client.js"></script>
+</body>
+</html>
