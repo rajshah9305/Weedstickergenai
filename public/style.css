@@ -1,0 +1,19 @@
+:root{
+  --green:#4ade80;
+  --bg:#111;
+  --surface:#1e1e1e;
+  --text:#f0f0f0;
+  --sub:#888;
+}
+*{box-sizing:border-box;margin:0;font-family:Poppins,sans-serif}
+body{display:flex;align-items:center;justify-content:center;min-height:100vh;background:var(--bg);color:var(--text);padding:2rem}
+.card{width:100%;max-width:24rem;background:var(--surface);border-radius:1rem;padding:2rem;text-align:center;box-shadow:0 10px 30px #0006}
+h1{font-size:2rem;font-weight:700;color:var(--green)}
+.subtitle{color:var(--sub);margin:.5rem 0 1.5rem}
+#stage{aspect-ratio:1/1;background:#000;border-radius:.75rem;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+#loader{display:flex;flex-direction:column;align-items:center;gap:.75rem}
+.spinner{width:3rem;height:3rem;border:.4rem solid #fff3;border-top-color:var(--green);border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+#output{width:100%;height:100%;object-fit:contain;display:none}
+.hidden{display:none}
+footer{margin-top:1.5rem;font-size:.75rem;color:var(--sub)}
